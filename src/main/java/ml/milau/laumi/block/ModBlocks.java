@@ -19,11 +19,15 @@ import java.util.function.Supplier;
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS
             = DeferredRegister.create(ForgeRegistries.BLOCKS, Laumi.MOD_ID);
-
+    //List of blocks being added to mod
     public static final RegistryObject<Block> GARNET_ORE = registerBlock("garnet_ore",
             ()-> new Block(AbstractBlock.Properties.create(Material.ROCK).harvestLevel(2).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(4f)));
+    public static final RegistryObject<Block>  GARNET_CLUSTER = registerBlock("garnet_cluster",
+            ()-> new Block(AbstractBlock.Properties.create(Material.ROCK).harvestLevel(2).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(4f)));
+    //End of blocks being added to mod
 
-    //helper methods to register a block and then also register it as an block-item
+
+    //helper methods to register a block and then also register it as a block-item
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name,block);
         registerBlockItem(name,toReturn);
