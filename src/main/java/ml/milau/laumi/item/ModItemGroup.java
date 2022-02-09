@@ -9,7 +9,7 @@ public class ModItemGroup {
     public static final ItemGroup LAUMI_GROUP = new ItemGroup("laumiModTab") {
         @Override
         public ItemStack createIcon() {
-            return new ItemStack(ModItems.GARNET.get());
+            return new ItemStack(ModItems.SOULSTONE.get());
         }
     };
 }

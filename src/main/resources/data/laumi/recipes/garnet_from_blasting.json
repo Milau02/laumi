@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "laumi:garnet_ore"
+  },
+  "result": "laumi:garnet",
+  "experience": 1.0,
+  "cookingtime": 100
+}

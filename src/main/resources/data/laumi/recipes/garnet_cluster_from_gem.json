@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "laumi:garnet_cluster"
+    }
+  ],
+  "result": {
+    "item": "laumi:garnet",
+    "count": 9
+  }
+}
