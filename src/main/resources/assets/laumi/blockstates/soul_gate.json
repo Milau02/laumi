@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "astral=false":
+      {
+        "model": "laumi:block/soul_gate"
+      },
+    "astral=true":
+      {
+        "model": "laumi:block/astral_gate"
+      }
+  }
+}

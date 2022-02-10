@@ -1,11 +1,14 @@
 package ml.milau.laumi.block;
 
 import ml.milau.laumi.Laumi;
+import ml.milau.laumi.block.custom.SoulGate;
 import ml.milau.laumi.item.ModItemGroup;
 import ml.milau.laumi.item.ModItems;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.material.MaterialColor;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.ToolType;
@@ -24,6 +27,8 @@ public class ModBlocks {
             ()-> new Block(AbstractBlock.Properties.create(Material.ROCK).harvestLevel(2).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(4f)));
     public static final RegistryObject<Block>  GARNET_CLUSTER = registerBlock("garnet_cluster",
             ()-> new Block(AbstractBlock.Properties.create(Material.ROCK).harvestLevel(2).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(4f)));
+    public static final RegistryObject<Block> SOUL_GATE = registerBlock("soul_gate",
+            () -> new SoulGate(AbstractBlock.Properties.create(Material.SAND, MaterialColor.BLUE).harvestTool(ToolType.SHOVEL).hardnessAndResistance(0.5f).sound(SoundType.SOUL_SAND)));
     //End of blocks being added to mod
 
 

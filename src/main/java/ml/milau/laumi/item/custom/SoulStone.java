@@ -35,20 +35,21 @@ public class SoulStone extends Item {
             PlayerEntity playerEntity = Objects.requireNonNull(context.getPlayer());
             BlockState blockClicked = theWorld.getBlockState(context.getPos());
             //Method that does the advanced action
-            transmuteBlock(blockClicked, context, playerEntity);
-
-            stack.damageItem(1, playerEntity,player -> player.sendBreakAnimation(context.getHand()));
+            if(transmuteBlock(blockClicked, context, playerEntity)){
+                stack.damageItem(1, playerEntity,player -> player.sendBreakAnimation(context.getHand()));
+            }
         }
         return super.onItemUseFirst(stack, context);
     }
 
-    private void transmuteBlock(BlockState blockClicked, ItemUseContext context, PlayerEntity playerEntity) {
+    private boolean transmuteBlock(BlockState blockClicked, ItemUseContext context, PlayerEntity playerEntity) {
         Block transmuteInto = blockChoice(blockClicked);
         if(transmuteInto == Blocks.AIR){ //the base return from block Choice, when it's not in the transmute order
-            return;
+            return false;
         }
         else{
             replaceBlock(context.getWorld(),context.getPos(),transmuteInto);
+            return true;
         }
     }
     private Block blockChoice(BlockState blockClicked){
