@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "laumi:block/astral_log_top",
+    "side": "laumi:block/astral_log"
+  }
+}

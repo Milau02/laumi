@@ -3,15 +3,21 @@ package ml.milau.laumi.item.custom;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.client.gui.screen.Screen;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUseContext;
 import net.minecraft.util.ActionResultType;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
 
+import javax.annotation.Nullable;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class SoulStone extends Item {
@@ -27,6 +33,19 @@ public class SoulStone extends Item {
         transmuteOrder.add(Blocks.GRAVEL);
         transmuteOrder.add(Blocks.SAND);
     }
+
+    @Override
+    public void addInformation(ItemStack stack, @Nullable World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+
+        if(Screen.hasShiftDown()){
+            tooltip.add(new TranslationTextComponent("tooltip.laumi.soulstone_shift"));
+        }
+        else{
+            tooltip.add(new TranslationTextComponent("tooltip.laumi.soulstone"));
+        }
+        super.addInformation(stack, worldIn, tooltip, flagIn);
+    }
+
     @Override
     public ActionResultType onItemUseFirst(ItemStack stack, ItemUseContext context) {
         World theWorld = context.getWorld();

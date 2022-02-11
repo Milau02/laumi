@@ -15,7 +15,7 @@ public class SoulGateHandler {
     PlayerEntity thePlayer;
     BlockState theBState;
     int ticks = 0;
-    int maxticks = 0;
+    int maxticks = 1;
     boolean count = false;
 
     @SubscribeEvent
@@ -23,7 +23,6 @@ public class SoulGateHandler {
         if(ticks >= maxticks){
             this.count = false;
             this.ticks = 0;
-            System.out.println("ending count");
             SoulGate.endAstral(theWorld,thePos,thePlayer,theBState);
         }
         if(this.count){
@@ -31,7 +30,6 @@ public class SoulGateHandler {
         }
     }
     public void beginCount(int seconds, World worldIn, BlockPos pos, PlayerEntity player, BlockState bState) {
-        System.out.println("beginning count");
         this.maxticks = (seconds * 20 * 2);
         this.theWorld = worldIn;
         this.thePos = pos;

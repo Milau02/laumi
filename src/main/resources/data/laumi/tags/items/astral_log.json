@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "laumi:astral_log",
+    "laumi:astral_wood",
+    "laumi:stripped_astral_log",
+    "laumi:stripped_astral_wood"
+  ]
+}

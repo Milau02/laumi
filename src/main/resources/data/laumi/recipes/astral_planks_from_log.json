@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "laumi:astral_log"
+    }
+  ],
+  "result": {
+    "item": "laumi:astral_planks",
+    "count": 4
+  }
+}

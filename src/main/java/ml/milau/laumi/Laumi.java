@@ -1,9 +1,11 @@
 package ml.milau.laumi;
 
+import com.google.common.collect.ImmutableMap;
 import ml.milau.laumi.block.ModBlocks;
 import ml.milau.laumi.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.item.AxeItem;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -52,6 +54,12 @@ public class Laumi
         // some preinit code
         LOGGER.info("HELLO FROM PREINIT");
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+
+        event.enqueueWork(() -> {
+            AxeItem.BLOCK_STRIPPING_MAP = new ImmutableMap.Builder<Block,Block>().putAll(AxeItem.BLOCK_STRIPPING_MAP)
+                    .put(ModBlocks.ASTRAL_LOG.get(), ModBlocks.STRIPPED_ASTRAL_LOG.get())
+                    .put(ModBlocks.ASTRAL_WOOD.get(), ModBlocks.STRIPPED_ASTRAL_WOOD.get()).build();
+        });
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
