@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "laumi:block/soultree_log_top",
+    "side": "laumi:block/soultree_log"
+  }
+}

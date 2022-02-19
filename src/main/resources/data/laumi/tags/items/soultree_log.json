@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "laumi:soultree_log",
+    "laumi:soultree_wood",
+    "laumi:stripped_soultree_log",
+    "laumi:stripped_soultree_wood"
+  ]
+}

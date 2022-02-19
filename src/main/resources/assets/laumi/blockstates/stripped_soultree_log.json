@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "laumi:block/stripped_soultree_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "laumi:block/stripped_soultree_log"
+    },
+    "axis=z": {
+      "model": "laumi:block/stripped_soultree_log_horizontal",
+      "x": 90
+    }
+  }
+}

@@ -1,15 +1,25 @@
 {
+  "itemGroup.laumiModTab": "Laumi",
+
   "item.laumi.soulstone": "Soulstone",
   "tooltip.laumi.soulstone": "Hold \u00A7eSHIFT\u00A7r for more Information",
   "tooltip.laumi.soulstone_shift": "Transmute Certain types of blocks, Use on a Soul Gate to become Ethereal",
+
   "item.laumi.garnet": "Garnet",
   "block.laumi.garnet_ore": "Garnet Ore",
   "block.laumi.garnet_cluster": "Garnet Cluster",
+
   "block.laumi.soul_gate": "Soul Gate",
-  "itemGroup.laumiModTab": "Laumi",
+
   "block.laumi.astral_log": "Astral Log",
   "block.laumi.stripped_astral_log": "Stripped Astral Log",
   "block.laumi.astral_wood": "Astral Wood",
   "block.laumi.stripped_astral_wood": "Stripped Astral Wood",
-  "block.laumi.astral_planks": "Astral Planks"
+  "block.laumi.astral_planks": "Astral Planks",
+
+  "block.laumi.soultree_log": "Soultree Log",
+  "block.laumi.stripped_soultree_log": "Stripped Soultree Log",
+  "block.laumi.soultree_wood": "Soultree Wood",
+  "block.laumi.stripped_soultree_wood": "Stripped Soultree Wood",
+  "block.laumi.soultree_planks": "Soultree Planks"
 }

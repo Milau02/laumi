@@ -42,7 +42,17 @@ public class ModBlocks {
     public static final RegistryObject<Block> ASTRAL_PLANKS = registerBlock("astral_planks",
             ()-> new Block(AbstractBlock.Properties.from(Blocks.OAK_PLANKS)));
 
-
+    //Soul Wood
+    public static final RegistryObject<Block> SOULTREE_LOG = registerBlock("soultree_log",
+            ()-> new RotatedPillarBlock(AbstractBlock.Properties.from(Blocks.OAK_LOG)));
+    public static final RegistryObject<Block> SOULTREE_WOOD = registerBlock("soultree_wood",
+            ()-> new RotatedPillarBlock(AbstractBlock.Properties.from(Blocks.OAK_WOOD)));
+    public static final RegistryObject<Block> STRIPPED_SOULTREE_LOG = registerBlock("stripped_soultree_log",
+            ()-> new RotatedPillarBlock(AbstractBlock.Properties.from(Blocks.STRIPPED_OAK_LOG)));
+    public static final RegistryObject<Block> STRIPPED_SOULTREE_WOOD = registerBlock("stripped_soultree_wood",
+            ()-> new RotatedPillarBlock(AbstractBlock.Properties.from(Blocks.STRIPPED_OAK_WOOD)));
+    public static final RegistryObject<Block> SOULTREE_PLANKS = registerBlock("soultree_planks",
+            ()-> new Block(AbstractBlock.Properties.from(Blocks.OAK_PLANKS)));
     //End of blocks being added to mod
 
 
