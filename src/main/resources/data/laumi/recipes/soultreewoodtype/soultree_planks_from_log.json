@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "laumi:soultree_log"
+    }
+  ],
+  "result": {
+    "item": "laumi:soultree_planks",
+    "count": 4
+  }
+}

@@ -11,15 +11,21 @@
 
   "block.laumi.soul_gate": "Soul Gate",
 
+  "block.laumi.astral_leaves": "Astral Leaves",
+  "block.laumi.astral_sapling": "Astral Sapling",
   "block.laumi.astral_log": "Astral Log",
   "block.laumi.stripped_astral_log": "Stripped Astral Log",
   "block.laumi.astral_wood": "Astral Wood",
   "block.laumi.stripped_astral_wood": "Stripped Astral Wood",
   "block.laumi.astral_planks": "Astral Planks",
+  "block.laumi.astral_root": "Astral Root",
 
+  "block.laumi.soultree_leaves": "Soultree Leaves",
+  "block.laumi.soultree_sapling": "Soultree Sapling",
   "block.laumi.soultree_log": "Soultree Log",
   "block.laumi.stripped_soultree_log": "Stripped Soultree Log",
   "block.laumi.soultree_wood": "Soultree Wood",
   "block.laumi.stripped_soultree_wood": "Stripped Soultree Wood",
-  "block.laumi.soultree_planks": "Soultree Planks"
+  "block.laumi.soultree_planks": "Soultree Planks",
+  "block.laumi.soultree_root": "Soultree Root"
 }

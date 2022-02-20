@@ -1,8 +1,8 @@
 {
   "parent": "block/cube_bottom_top",
   "textures": {
-    "side": "laumi:block/soul_gate_side",
-    "top": "laumi:block/soul_gate_top",
+    "side": "laumi:block/activated_soul_gate_side",
+    "top": "laumi:block/activated_soul_gate_top",
     "bottom": "laumi:block/soul_gate_bottom"
   }
 }

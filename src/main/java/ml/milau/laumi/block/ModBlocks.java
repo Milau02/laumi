@@ -2,11 +2,14 @@ package ml.milau.laumi.block;
 
 import ml.milau.laumi.Laumi;
 import ml.milau.laumi.block.custom.SoulGate;
+import ml.milau.laumi.block.custom.trees.AstralTree;
+import ml.milau.laumi.block.custom.trees.SoultreeTree;
 import ml.milau.laumi.item.ModItemGroup;
 import ml.milau.laumi.item.ModItems;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
+import net.minecraft.block.trees.OakTree;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.ToolType;
@@ -28,9 +31,13 @@ public class ModBlocks {
             ()-> new Block(AbstractBlock.Properties.create(Material.ROCK).harvestLevel(2).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(4f)));
 
     public static final RegistryObject<Block> SOUL_GATE = registerBlock("soul_gate",
-            () -> new SoulGate(AbstractBlock.Properties.create(Material.SAND, MaterialColor.BLUE).harvestTool(ToolType.SHOVEL).hardnessAndResistance(0.5f).sound(SoundType.SOUL_SAND)));
+            () -> new SoulGate(AbstractBlock.Properties.create(Material.ROCK, MaterialColor.RED).harvestTool(ToolType.PICKAXE).hardnessAndResistance(0.5f).sound(SoundType.LODESTONE)));
 
     //Astral Wood
+    public static final RegistryObject<Block> ASTRAL_LEAVES = registerBlock("astral_leaves",
+            ()-> new Block(AbstractBlock.Properties.create(Material.LEAVES).hardnessAndResistance(0,2F).tickRandomly().sound(SoundType.PLANT).notSolid()));
+    public static final RegistryObject<Block> ASTRAL_SAPLING = registerBlock("astral_sapling",
+            ()-> new SaplingBlock(new AstralTree(),AbstractBlock.Properties.from(Blocks.DARK_OAK_SAPLING)));
     public static final RegistryObject<Block> ASTRAL_LOG = registerBlock("astral_log",
             ()-> new RotatedPillarBlock(AbstractBlock.Properties.from(Blocks.OAK_LOG)));
     public static final RegistryObject<Block> ASTRAL_WOOD = registerBlock("astral_wood",
@@ -41,8 +48,14 @@ public class ModBlocks {
             ()-> new RotatedPillarBlock(AbstractBlock.Properties.from(Blocks.STRIPPED_OAK_WOOD)));
     public static final RegistryObject<Block> ASTRAL_PLANKS = registerBlock("astral_planks",
             ()-> new Block(AbstractBlock.Properties.from(Blocks.OAK_PLANKS)));
+    public static final RegistryObject<Block> ASTRAL_ROOT = registerBlock("astral_root",
+            ()-> new Block(AbstractBlock.Properties.from(Blocks.DIRT)));
 
     //Soul Wood
+    public static final RegistryObject<Block> SOULTREE_LEAVES = registerBlock("soultree_leaves",
+            ()-> new Block(AbstractBlock.Properties.create(Material.LEAVES).hardnessAndResistance(0,2F).tickRandomly().sound(SoundType.PLANT).notSolid()));
+    public static final RegistryObject<Block> SOULTREE_SAPLING = registerBlock("soultree_sapling",
+            ()-> new SaplingBlock(new SoultreeTree(),AbstractBlock.Properties.from(Blocks.DARK_OAK_SAPLING)));
     public static final RegistryObject<Block> SOULTREE_LOG = registerBlock("soultree_log",
             ()-> new RotatedPillarBlock(AbstractBlock.Properties.from(Blocks.OAK_LOG)));
     public static final RegistryObject<Block> SOULTREE_WOOD = registerBlock("soultree_wood",
@@ -53,6 +66,8 @@ public class ModBlocks {
             ()-> new RotatedPillarBlock(AbstractBlock.Properties.from(Blocks.STRIPPED_OAK_WOOD)));
     public static final RegistryObject<Block> SOULTREE_PLANKS = registerBlock("soultree_planks",
             ()-> new Block(AbstractBlock.Properties.from(Blocks.OAK_PLANKS)));
+    public static final RegistryObject<Block> SOULTREE_ROOT = registerBlock("soultree_root",
+            ()-> new Block(AbstractBlock.Properties.from(Blocks.DIRT)));
     //End of blocks being added to mod
 
 

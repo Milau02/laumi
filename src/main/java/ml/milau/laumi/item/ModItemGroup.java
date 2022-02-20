@@ -1,6 +1,6 @@
 package ml.milau.laumi.item;
 
-import net.minecraft.item.Item;
+import ml.milau.laumi.block.ModBlocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 
@@ -9,7 +9,7 @@ public class ModItemGroup {
     public static final ItemGroup LAUMI_GROUP = new ItemGroup("laumiModTab") {
         @Override
         public ItemStack createIcon() {
-            return new ItemStack(ModItems.SOULSTONE.get());
+            return new ItemStack(ModBlocks.SOULTREE_LOG.get());
         }
     };
 }

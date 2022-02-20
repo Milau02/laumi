@@ -25,7 +25,8 @@ public class LaumiTags {
     public static class Items{
 
         public static final Tags.IOptionalNamedTag<Item> ASTRAL_LOG = createTag("astral_log");
-
+        public static final Tags.IOptionalNamedTag<Item> SOULTREE_LOG = createTag("soultree_log");
+        
         private static Tags.IOptionalNamedTag<Item> createTag(String name){
             return ItemTags.createOptional(new ResourceLocation(Laumi.MOD_ID,name));
         }

@@ -6,7 +6,7 @@
       },
     "astral=true":
       {
-        "model": "laumi:block/astral_gate"
+        "model": "laumi:block/activated_soul_gate"
       }
   }
 }

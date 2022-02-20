@@ -5,6 +5,8 @@ import ml.milau.laumi.block.ModBlocks;
 import ml.milau.laumi.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.item.AxeItem;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
@@ -58,13 +60,22 @@ public class Laumi
         event.enqueueWork(() -> {
             AxeItem.BLOCK_STRIPPING_MAP = new ImmutableMap.Builder<Block,Block>().putAll(AxeItem.BLOCK_STRIPPING_MAP)
                     .put(ModBlocks.ASTRAL_LOG.get(), ModBlocks.STRIPPED_ASTRAL_LOG.get())
-                    .put(ModBlocks.ASTRAL_WOOD.get(), ModBlocks.STRIPPED_ASTRAL_WOOD.get()).build();
+                    .put(ModBlocks.ASTRAL_WOOD.get(), ModBlocks.STRIPPED_ASTRAL_WOOD.get())
+                    .put(ModBlocks.SOULTREE_LOG.get(),ModBlocks.STRIPPED_SOULTREE_LOG.get())
+                    .put(ModBlocks.SOULTREE_WOOD.get(),ModBlocks.STRIPPED_SOULTREE_WOOD.get()).build();
         });
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
         // do something that can only be done on the client
         //LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().options);
+        event.enqueueWork(()->{
+            RenderTypeLookup.setRenderLayer(ModBlocks.ASTRAL_LEAVES.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.ASTRAL_SAPLING.get(), RenderType.getCutout());
+
+            RenderTypeLookup.setRenderLayer(ModBlocks.SOULTREE_LEAVES.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.SOULTREE_SAPLING.get(), RenderType.getCutout());
+        });
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event)

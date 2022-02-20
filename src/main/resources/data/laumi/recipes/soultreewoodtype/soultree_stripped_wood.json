@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bark",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "laumi:stripped_soultree_log"
+    }
+  },
+  "result": {
+    "item": "laumi:stripped_soultree_wood",
+    "count": 3
+  }
+}
