@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "laumi:block/astral_planks",
+    "top": "laumi:block/astral_planks",
+    "side": "laumi:block/astral_planks"
+  }
+}

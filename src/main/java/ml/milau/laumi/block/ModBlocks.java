@@ -35,7 +35,7 @@ public class ModBlocks {
 
     //Astral Wood
     public static final RegistryObject<Block> ASTRAL_LEAVES = registerBlock("astral_leaves",
-            ()-> new Block(AbstractBlock.Properties.create(Material.LEAVES).hardnessAndResistance(0,2F).tickRandomly().sound(SoundType.PLANT).notSolid()));
+            ()-> new Block(AbstractBlock.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F,2F).tickRandomly().sound(SoundType.PLANT).notSolid()));
     public static final RegistryObject<Block> ASTRAL_SAPLING = registerBlock("astral_sapling",
             ()-> new SaplingBlock(new AstralTree(),AbstractBlock.Properties.from(Blocks.DARK_OAK_SAPLING)));
     public static final RegistryObject<Block> ASTRAL_LOG = registerBlock("astral_log",
@@ -50,10 +50,14 @@ public class ModBlocks {
             ()-> new Block(AbstractBlock.Properties.from(Blocks.OAK_PLANKS)));
     public static final RegistryObject<Block> ASTRAL_ROOT = registerBlock("astral_root",
             ()-> new Block(AbstractBlock.Properties.from(Blocks.DIRT)));
+    public static final RegistryObject<Block> ASTRAL_WOOD_STAIRS =  registerBlock("astral_stairs",
+            ()-> new StairsBlock(()->ASTRAL_PLANKS.get().getDefaultState(),
+                    AbstractBlock.Properties.from(Blocks.OAK_STAIRS)));
+
 
     //Soul Wood
     public static final RegistryObject<Block> SOULTREE_LEAVES = registerBlock("soultree_leaves",
-            ()-> new Block(AbstractBlock.Properties.create(Material.LEAVES).hardnessAndResistance(0,2F).tickRandomly().sound(SoundType.PLANT).notSolid()));
+            ()-> new Block(AbstractBlock.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F,2F).tickRandomly().sound(SoundType.PLANT).notSolid()));
     public static final RegistryObject<Block> SOULTREE_SAPLING = registerBlock("soultree_sapling",
             ()-> new SaplingBlock(new SoultreeTree(),AbstractBlock.Properties.from(Blocks.DARK_OAK_SAPLING)));
     public static final RegistryObject<Block> SOULTREE_LOG = registerBlock("soultree_log",
@@ -68,6 +72,10 @@ public class ModBlocks {
             ()-> new Block(AbstractBlock.Properties.from(Blocks.OAK_PLANKS)));
     public static final RegistryObject<Block> SOULTREE_ROOT = registerBlock("soultree_root",
             ()-> new Block(AbstractBlock.Properties.from(Blocks.DIRT)));
+    public static final RegistryObject<Block> SOULTREE_WOOD_STAIRS =  registerBlock("soultree_stairs",
+            ()-> new StairsBlock(()->SOULTREE_PLANKS.get().getDefaultState(),
+                    AbstractBlock.Properties.from(Blocks.OAK_STAIRS)));
+
     //End of blocks being added to mod
 
 
