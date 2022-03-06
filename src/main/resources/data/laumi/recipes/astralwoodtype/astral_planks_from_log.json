@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "tag": "laumi:astral_log"
+      "tag": "laumi:astral_logs"
     }
   ],
   "result": {

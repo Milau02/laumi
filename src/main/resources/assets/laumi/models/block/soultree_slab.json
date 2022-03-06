@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "laumi:block/soultree_planks",
+    "top": "laumi:block/soultree_planks",
+    "side": "laumi:block/soultree_planks"
+  }
+}

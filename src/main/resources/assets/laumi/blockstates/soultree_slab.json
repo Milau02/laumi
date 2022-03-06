@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "laumi:block/soultree_slab"
+    },
+    "type=double": {
+      "model": "laumi:block/soultree_planks"
+    },
+    "type=top": {
+      "model": "laumi:block/soultree_slab_top"
+    }
+  }
+}

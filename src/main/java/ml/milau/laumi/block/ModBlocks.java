@@ -38,6 +38,8 @@ public class ModBlocks {
             ()-> new Block(AbstractBlock.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F,2F).tickRandomly().sound(SoundType.PLANT).notSolid()));
     public static final RegistryObject<Block> ASTRAL_SAPLING = registerBlock("astral_sapling",
             ()-> new SaplingBlock(new AstralTree(),AbstractBlock.Properties.from(Blocks.DARK_OAK_SAPLING)));
+    public static final RegistryObject<Block> ASTRAL_ROOT = registerBlock("astral_root",
+            ()-> new Block(AbstractBlock.Properties.from(Blocks.DIRT)));
     public static final RegistryObject<Block> ASTRAL_LOG = registerBlock("astral_log",
             ()-> new RotatedPillarBlock(AbstractBlock.Properties.from(Blocks.OAK_LOG)));
     public static final RegistryObject<Block> ASTRAL_WOOD = registerBlock("astral_wood",
@@ -48,11 +50,15 @@ public class ModBlocks {
             ()-> new RotatedPillarBlock(AbstractBlock.Properties.from(Blocks.STRIPPED_OAK_WOOD)));
     public static final RegistryObject<Block> ASTRAL_PLANKS = registerBlock("astral_planks",
             ()-> new Block(AbstractBlock.Properties.from(Blocks.OAK_PLANKS)));
-    public static final RegistryObject<Block> ASTRAL_ROOT = registerBlock("astral_root",
-            ()-> new Block(AbstractBlock.Properties.from(Blocks.DIRT)));
     public static final RegistryObject<Block> ASTRAL_WOOD_STAIRS =  registerBlock("astral_stairs",
             ()-> new StairsBlock(()->ASTRAL_PLANKS.get().getDefaultState(),
                     AbstractBlock.Properties.from(Blocks.OAK_STAIRS)));
+    public static final RegistryObject<Block> ASTRAL_FENCE = registerBlock("astral_fence",
+            ()-> new FenceBlock(AbstractBlock.Properties.from(Blocks.OAK_FENCE)));
+    public static final RegistryObject<Block> ASTRAL_FENCE_GATE = registerBlock("astral_fence_gate",
+            ()-> new FenceGateBlock(AbstractBlock.Properties.from(Blocks.OAK_FENCE_GATE)));
+    public static final RegistryObject<Block> ASTRAL_SLAB = registerBlock("astral_slab",
+            ()-> new SlabBlock(AbstractBlock.Properties.from(Blocks.OAK_SLAB)));
 
 
     //Soul Wood
@@ -60,6 +66,8 @@ public class ModBlocks {
             ()-> new Block(AbstractBlock.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F,2F).tickRandomly().sound(SoundType.PLANT).notSolid()));
     public static final RegistryObject<Block> SOULTREE_SAPLING = registerBlock("soultree_sapling",
             ()-> new SaplingBlock(new SoultreeTree(),AbstractBlock.Properties.from(Blocks.DARK_OAK_SAPLING)));
+    public static final RegistryObject<Block> SOULTREE_ROOT = registerBlock("soultree_root",
+            ()-> new Block(AbstractBlock.Properties.from(Blocks.DIRT)));
     public static final RegistryObject<Block> SOULTREE_LOG = registerBlock("soultree_log",
             ()-> new RotatedPillarBlock(AbstractBlock.Properties.from(Blocks.OAK_LOG)));
     public static final RegistryObject<Block> SOULTREE_WOOD = registerBlock("soultree_wood",
@@ -70,12 +78,15 @@ public class ModBlocks {
             ()-> new RotatedPillarBlock(AbstractBlock.Properties.from(Blocks.STRIPPED_OAK_WOOD)));
     public static final RegistryObject<Block> SOULTREE_PLANKS = registerBlock("soultree_planks",
             ()-> new Block(AbstractBlock.Properties.from(Blocks.OAK_PLANKS)));
-    public static final RegistryObject<Block> SOULTREE_ROOT = registerBlock("soultree_root",
-            ()-> new Block(AbstractBlock.Properties.from(Blocks.DIRT)));
     public static final RegistryObject<Block> SOULTREE_WOOD_STAIRS =  registerBlock("soultree_stairs",
             ()-> new StairsBlock(()->SOULTREE_PLANKS.get().getDefaultState(),
                     AbstractBlock.Properties.from(Blocks.OAK_STAIRS)));
-
+    public static final RegistryObject<Block> SOULTREE_FENCE = registerBlock("soultree_fence",
+            ()-> new FenceBlock(AbstractBlock.Properties.from(Blocks.OAK_FENCE)));
+    public static final RegistryObject<Block> SOULTREE_FENCE_GATE = registerBlock("soultree_fence_gate",
+            ()-> new FenceGateBlock(AbstractBlock.Properties.from(Blocks.OAK_FENCE_GATE)));
+    public static final RegistryObject<Block> SOULTREE_SLAB = registerBlock("soultree_slab",
+            ()-> new SlabBlock(AbstractBlock.Properties.from(Blocks.OAK_SLAB)));
     //End of blocks being added to mod
 
 

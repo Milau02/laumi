@@ -18,7 +18,10 @@
   "block.laumi.astral_wood": "Astral Wood",
   "block.laumi.stripped_astral_wood": "Stripped Astral Wood",
   "block.laumi.astral_planks": "Astral Planks",
+  "block.laumi.astral_slab": "Astral Slab",
   "block.laumi.astral_stairs": "Astral Stairs",
+  "block.laumi.astral_fence": "Astral Fence",
+  "block.laumi.astral_fence_gate": "Astral Fence Gate",
   "block.laumi.astral_root": "Astral Root",
 
   "block.laumi.soultree_leaves": "Soultree Leaves",
@@ -28,6 +31,9 @@
   "block.laumi.soultree_wood": "Soultree Wood",
   "block.laumi.stripped_soultree_wood": "Stripped Soultree Wood",
   "block.laumi.soultree_planks": "Soultree Planks",
+  "block.laumi.soultree_slab": "Soultree Slab",
   "block.laumi.soultree_stairs": "Soultree Stairs",
+  "block.laumi.soultree_fence": "Soultree Fence",
+  "block.laumi.soultree_fence_gate": "Soultree Fence Gate",
   "block.laumi.soultree_root": "Soultree Root"
 }
