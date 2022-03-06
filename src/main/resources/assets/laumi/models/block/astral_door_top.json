@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top",
+  "textures": {
+    "top": "laumi:block/astral_door_top",
+    "bottom": "laumi:block/astral_door_bottom"
+  }
+}

@@ -23,6 +23,7 @@
   "block.laumi.astral_fence": "Astral Fence",
   "block.laumi.astral_fence_gate": "Astral Fence Gate",
   "block.laumi.astral_root": "Astral Root",
+  "block.laumi.astral_door": "Astral Door",
 
   "block.laumi.soultree_leaves": "Soultree Leaves",
   "block.laumi.soultree_sapling": "Soultree Sapling",
@@ -35,5 +36,6 @@
   "block.laumi.soultree_stairs": "Soultree Stairs",
   "block.laumi.soultree_fence": "Soultree Fence",
   "block.laumi.soultree_fence_gate": "Soultree Fence Gate",
-  "block.laumi.soultree_root": "Soultree Root"
+  "block.laumi.soultree_root": "Soultree Root",
+  "block.laumi.soultree_door": "Soultree Door"
 }

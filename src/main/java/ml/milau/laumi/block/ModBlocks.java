@@ -59,7 +59,8 @@ public class ModBlocks {
             ()-> new FenceGateBlock(AbstractBlock.Properties.from(Blocks.OAK_FENCE_GATE)));
     public static final RegistryObject<Block> ASTRAL_SLAB = registerBlock("astral_slab",
             ()-> new SlabBlock(AbstractBlock.Properties.from(Blocks.OAK_SLAB)));
-
+    public static final RegistryObject<Block> ASTRAL_DOOR = registerBlock("astral_door",
+            ()-> new DoorBlock(AbstractBlock.Properties.from(Blocks.OAK_DOOR).notSolid()));
 
     //Soul Wood
     public static final RegistryObject<Block> SOULTREE_LEAVES = registerBlock("soultree_leaves",
@@ -87,6 +88,8 @@ public class ModBlocks {
             ()-> new FenceGateBlock(AbstractBlock.Properties.from(Blocks.OAK_FENCE_GATE)));
     public static final RegistryObject<Block> SOULTREE_SLAB = registerBlock("soultree_slab",
             ()-> new SlabBlock(AbstractBlock.Properties.from(Blocks.OAK_SLAB)));
+    public static final RegistryObject<Block> SOULTREE_DOOR = registerBlock("soultree_door",
+            ()-> new DoorBlock(AbstractBlock.Properties.from(Blocks.OAK_DOOR).notSolid()));
     //End of blocks being added to mod
 
 

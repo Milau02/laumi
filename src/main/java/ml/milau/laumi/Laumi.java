@@ -75,6 +75,9 @@ public class Laumi
 
             RenderTypeLookup.setRenderLayer(ModBlocks.SOULTREE_LEAVES.get(), RenderType.getCutout());
             RenderTypeLookup.setRenderLayer(ModBlocks.SOULTREE_SAPLING.get(), RenderType.getCutout());
+
+            RenderTypeLookup.setRenderLayer(ModBlocks.ASTRAL_DOOR.get(),RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.SOULTREE_DOOR.get(),RenderType.getCutout());
         });
     }
 
