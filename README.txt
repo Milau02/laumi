@@ -7,10 +7,14 @@ Currently adds:
 
   - Astral Logs / Wood (With stripped variants)
   - Astral Planks
+  - Astral Slab
   - Astral Stairs
+  - Astral Door
   - Astral Trees / Saplings / Leaves / Roots
 
   - Soultree Logs / Wood (With stripped variants)
   - Soultree Planks
+  - Soultree Slab
   - Soultree Stairs
+  - Soultree Door
   - Soultree Trees / Saplings / Leaves / Roots
