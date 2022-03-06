@@ -12,7 +12,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:block_state_property",
-                  "block": "laumi:astral_slab",
+                  "block": "laumi:soultree_slab",
                   "properties": {
                     "type": "double"
                   }
